@@ -1,0 +1,53 @@
+AEAD Lab APUNTES:
+
+________________________________________________________________________________
+TIP #001
+________________________________________________________________________________
+Configurar autocompletado de Eclipse:
+
+- Agregar:
+    "@._abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  a  Eclipse > Preferences > Java > Editor > Content Assist.
+  In the bottom pane "Auto Activation"
+  there's the field "Auto activation triggers for Java".
+
+REF: https://stackoverflow.com/questions/6912169/eclipse-enable-autocomplete-content-assist
+
+- En "Eclipse > Preferences > Java > Editor > Content Assist" -> "Disable insertion triggers except Enter"
+
+- En "Eclipse > Preferences > Java > Editor > Typing" -> "Auto insert semicolons"
+
+- En "Eclipse > Preferences > Java > Editor > Save Actions" -> "Organize imports"
+- En "Eclipse > Preferences > Java > Editor > Save Actions" -> "Aditional Actions"
+
+
+- En "Eclipse > Preferences > General > Editors > Keys":
+  - Asignar "ReDo" a "Command+Y"
+  - Asignar "Delete to End of Line" a "Command+D"
+  - Asignar "Line End" a "END"
+  - Asignar "Line Start" a "INI"
+
+
+
+  ________________________________________________________________________________
+  TIP #001
+  ________________________________________________________________________________
+
+  Enlaces favoritos:
+
+  - Spring Initializer:
+    https://start.spring.io/
+
+  - Interprete de Java online:
+    https://replit.com/languages/java10
+
+  - GIT - AEAD home
+    https://github.com/aead72
+
+  - GIT - Eliminado de ramas remotas:
+    https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely/23961231#23961231
+
+  - JAVA - Lambda Expressions
+    http://tutorials.jenkov.com/java/lambda-expressions.html
+
+  -

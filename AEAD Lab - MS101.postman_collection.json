@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "46f31ea5-84aa-40cb-87ba-8191f6d96e8b",
+		"name": "AEAD Lab - MS101",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "service-product",
+			"item": [
+				{
+					"name": "GET All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22001/products/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22001/products/v1.0/2",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\":\"Wallabee Men's Suede Shoe\",\n\"description\":\"Comfort and tendency do not have to be at odds. This suede wallabee style shoe is all you need for marathon work days. With soft suede design and stitched details, it is perfect to combine with jeans\",\n\"stock\":4,\n\"price\":30,\n\"category\":{\"id\":1,\"name\": \"shoes\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:22001/products/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"name\": \"Producto 2\",\n    \"description\": \"descripcion pendiente\",\n    \"stock\": 9.0,\n    \"price\": 12.5,\n    \"status\": \"CREATED\",\n    \"createAt\": \"2018-09-05T03:00:00.000+00:00\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"shoes\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:22001/products/v1.0/2",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:22001/products/v1.0/4",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Product Stock Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:22001/products/v1.0/1/stock?quantity=-2",
+							"host": [
+								"localhost"
+							],
+							"port": "22001",
+							"path": [
+								"products",
+								"v1.0",
+								"1",
+								"stock"
+							],
+							"query": [
+								{
+									"key": "quantity",
+									"value": "-2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "service-customer",
+			"item": [
+				{
+					"name": "POST Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"numberID\":\"40408083\",\n        \"firstName\": \"Luis\",\n        \"lastName\": \"rodriguez\",\n        \"email\": \"profesor@digitallab.academy\",\n        \"photoUrl\": \"\",\n        \"region\": {\n            \"id\": 1\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:22002/customers/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22002",
+							"path": [
+								"customers",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22002/customers/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22002",
+							"path": [
+								"customers",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Customer by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22002/customers/v1.0/1",
+							"host": [
+								"localhost"
+							],
+							"port": "22002",
+							"path": [
+								"customers",
+								"v1.0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "service-Invoice",
+			"item": [
+				{
+					"name": "POST Invoice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"numberInvoice\": \"002\",\n    \"description\": \"invoice store\",\n    \"customerId\": 1,\n    \"items\": [\n        {\n            \"quantity\": 1,\n            \"priceItem\": 178.89,\n            \"productId\": 1\n        },\n\n        {\n            \"quantity\": 2,\n            \"priceItem\": 40.06,\n            \"productId\": 3\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:22003/invoices/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22003",
+							"path": [
+								"invoices",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22003/invoices/v1.0",
+							"host": [
+								"localhost"
+							],
+							"port": "22003",
+							"path": [
+								"invoices",
+								"v1.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Invoice by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22003/invoices/v1.0/1",
+							"host": [
+								"localhost"
+							],
+							"port": "22003",
+							"path": [
+								"invoices",
+								"v1.0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "service-config",
+			"item": [
+				{
+					"name": "GET service-product bootstrap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://cfg-svc-usr:cfg-svc-pwd@localhost:21000/service-product/default",
+							"protocol": "http",
+							"auth": {
+								"user": "cfg-svc-usr",
+								"password": "cfg-svc-pwd"
+							},
+							"host": [
+								"localhost"
+							],
+							"port": "21000",
+							"path": [
+								"service-product",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET service-customer bootstrap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://cfg-svc-usr:cfg-svc-pwd@localhost:21000/service-customer/default",
+							"protocol": "http",
+							"auth": {
+								"user": "cfg-svc-usr",
+								"password": "cfg-svc-pwd"
+							},
+							"host": [
+								"localhost"
+							],
+							"port": "21000",
+							"path": [
+								"service-customer",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET service-registry bootstrap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://cfg-svc-usr:cfg-svc-pwd@localhost:21000/service-registry/default",
+							"protocol": "http",
+							"auth": {
+								"user": "cfg-svc-usr",
+								"password": "cfg-svc-pwd"
+							},
+							"host": [
+								"localhost"
+							],
+							"port": "21000",
+							"path": [
+								"service-registry",
+								"default"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eureka",
+			"item": [
+				{
+					"name": "Eureka server (usar browser)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000",
+							"host": [
+								"localhost"
+							],
+							"port": "31000"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hystrix",
+			"item": [
+				{
+					"name": "Hystrix server (usar browser)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:22003/hystrix",
+							"host": [
+								"localhost"
+							],
+							"port": "22003",
+							"path": [
+								"hystrix"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

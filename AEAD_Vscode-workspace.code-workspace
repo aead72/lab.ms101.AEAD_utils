@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "workspace-STS4/AEAD MS101/service-config"
+		},
+		{
+			"path": "workspace-STS4/AEAD MS101/service-config-data"
+		},
+		{
+			"path": "workspace-STS4/AEAD MS101/service-customer"
+		},
+		{
+			"path": "workspace-STS4/AEAD MS101/service-invoice"
+		},
+		{
+			"path": "workspace-STS4/AEAD MS101/service-product"
+		},
+		{
+			"path": "workspace-STS4/AEAD MS101/service-registry"
+		}
+	],
+	"settings": {}
+}
