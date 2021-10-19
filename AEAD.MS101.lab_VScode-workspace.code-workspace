@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../service-gateway"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../service-config"
+		},
+		{
+			"path": "../service-config-data"
+		},
+		{
+			"path": "../service-customer"
+		},
+		{
+			"path": "../service-invoice"
+		},
+		{
+			"path": "../service-product"
+		},
+		{
+			"path": "../service-registry"
+		}
+	],
+	"settings": {
+		"terminal.integrated.scrollback": 10000,
+		"terminal.integrated.defaultProfile.osx": "zsh"
+	}
+}
