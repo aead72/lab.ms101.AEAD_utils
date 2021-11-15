@@ -77,7 +77,7 @@ REF: https://stackoverflow.com/questions/6912169/eclipse-enable-autocomplete-con
 
   Docker en Mac:
 
-  - Alternativa a Docker Desktop:
+  - Alternativa a Docker Desktop (https://golangrepo.com/repo/abiosoft-colima-go-miscellaneous):
     brew install lima
     brew install docker
     brew install colima
