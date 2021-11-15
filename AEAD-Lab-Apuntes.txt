@@ -51,3 +51,35 @@ REF: https://stackoverflow.com/questions/6912169/eclipse-enable-autocomplete-con
     http://tutorials.jenkov.com/java/lambda-expressions.html
 
   -
+
+
+
+ ________________________________________________________________________________
+  TIP #002
+ ________________________________________________________________________________
+
+  Visaul Studio Code
+
+  - Instalar Font: "Casacadia Code PL", configurar el mismo font en iTerm2
+
+  - Instalar extensiones:
+    + Auto Rename Tag
+    + Bracket Pair Colorizer 2
+    + Cobalt2 Theme Official
+    + Docker
+    + GitLens
+    + Thunder Client (reemplazo de Postman)
+
+
+ ________________________________________________________________________________
+  TIP #003
+ ________________________________________________________________________________
+
+  Docker en Mac:
+
+  - Alternativa a Docker Desktop:
+    brew install lima
+    brew install docker
+    brew install colima
+    colima start
+
